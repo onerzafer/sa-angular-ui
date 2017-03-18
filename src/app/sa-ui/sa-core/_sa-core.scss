@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600');
+@import "sa-core-variables";
+
+body, html {
+    background: $bg-color;
+    color: $text-color;
+    font-size:$font-size-normal;
+    font-weight:$font-weight-normal;
+    font-family: $sans;
+}

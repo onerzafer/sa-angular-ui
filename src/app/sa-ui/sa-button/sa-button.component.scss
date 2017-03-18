@@ -1,0 +1,111 @@
+@import "../sa-core/sa-core-variables";
+
+:host {
+	border-radius: 6px;
+    padding: 12px;
+	outline: 0;
+	border: 0;
+	font-size: 1rem;
+	font-family: $sans;
+	transition: background linear 300ms;
+	cursor: pointer;
+	font-weight: $font-weight-bold;
+	margin: 9px 5px;
+	min-width: 200px;
+	text-align: center;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:disabled {
+		cursor: default;
+		background: $bg-light-color;
+		color: $bg-color;
+
+		&:hover, &.active {
+			background: $bg-light-color;
+			color: $bg-color;
+		}	
+	}
+
+	&.sa-primary {
+		color: $text-color;
+		background-color: $primary-color;
+		
+		&:hover, &.active {
+			background: $primary-dark-color;
+		}
+
+		&:disabled {
+			background: $bg-light-color;
+			color: $bg-color;
+
+			&:hover, &.active {
+				background: $bg-light-color;
+				color: $bg-color;
+			}	
+		}
+	}
+	
+	&.sa-secondary {
+		color: $text-color;
+		background-color: $secondary-color;
+		
+		&:hover, &.active {
+			background: $secondary-dark-color;
+		}
+
+		&:disabled {
+			background: $bg-light-color;
+			color: $bg-color;
+
+			&:hover, &.active {
+				background: $bg-light-color;
+				color: $bg-color;
+			}	
+		}
+	}
+	
+	&.sa-success {
+		color: $text-color;
+		background-color: $success-color;
+		
+		&:hover, &.active {
+			background: $success-dark-color;
+		}
+
+		&:disabled {
+			background: $bg-light-color;
+			color: $bg-color;
+
+			&:hover, &.active {
+				background: $bg-light-color;
+				color: $bg-color;
+			}	
+		}
+	}
+	
+	&.sa-alert {
+		color: $bg-color;
+		background-color: $alert-color;
+		
+		&:hover, &.active {
+			background: $alert-dark-color;
+		}
+
+		&:disabled {
+			background: $bg-light-color;
+			color: $bg-color;
+
+			&:hover, &.active {
+				background: $bg-light-color;
+				color: $bg-color;
+			}	
+		}
+	}
+}
